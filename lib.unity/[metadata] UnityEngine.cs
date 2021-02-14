@@ -3,6 +3,46 @@ using System.Collections;
 using System.Collections.Generic;
 
 /// <summary>
+/// The type of the parameter.
+/// </summary>
+enum AnimatorControllerParameterType {
+    /// <summary>
+    /// Float type parameter.
+    /// </summary>
+    Float,
+    /// <summary>
+    /// Int type parameter.
+    /// </summary>
+    Int,
+    /// <summary>
+    /// Boolean type parameter.
+    /// </summary>
+    Bool,
+    /// <summary>
+    /// Trigger type parameter.
+    /// </summary>
+    Trigger
+}
+
+/// <summary>
+/// Culling mode for the Animator.
+/// </summary>
+enum AnimatorCullingMode {
+    /// <summary>
+    /// Always animate the entire character. Object is animated even when offscreen.
+    /// </summary>
+    AlwaysAnimate,
+    /// <summary>
+    /// Retarget, IK and write of Transforms are disabled when renderers are not visible.
+    /// </summary>
+    CullUpdateTransforms,
+    /// <summary>
+    /// Animation is completely disabled when renderers are not visible.
+    /// </summary>
+    CullCompletely
+}
+
+/// <summary>
 /// Use ForceMode to specify how to apply a force using <c>Rigidbody.AddForce</c>.
 /// </summary>
 enum ForceMode {
@@ -675,7 +715,6 @@ namespace UnityEngine {
         /// Returns true if two vectors are approximately equal.
         /// </summary>
         public static Vector3 operator ==(Vector3 a, float d);
-
     }
 
     /// <summary>

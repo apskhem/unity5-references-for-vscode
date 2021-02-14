@@ -2,20 +2,29 @@
 This repository was created to list all unity script references into vscode snippet.
 
 ## **Listed UnityEngine Entities**
-##### Supported Enumerations (3)
+##### Supported Enumerations (5)
+* `AnimatorControllerParameterType`
+* `AnimatorCullingMode`
 * `ForceMode`
 * `PrimitiveType`
 * `Space`
-##### Supported Structs (4)
+##### Supported Structs (8)
 * `AccelerationEvent`
 * `Color`
+* `HumanBone`
+* `HumanLimit`
+* `HumanDescription`
 * `Quaternion`
+* `SkeletonBone`
 * `Vector3`
-##### Supported Classes (18)
+##### Supported Classes (21)
+* **`AnimatorControllerParameter`**
 * **`Input`**
 * **`Object`**
+    * `Avatar`
     * `Component`
         * `Behaviour`
+            * `Animator`
             * `MonoBehaviour`
         * `Collider`
             * `BoxCollider`
